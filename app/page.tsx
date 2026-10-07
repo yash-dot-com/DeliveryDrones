@@ -6,6 +6,7 @@ import { ControlPanel } from '@/components/dashboard/ControlPanel';
 import { StatsPanel } from '@/components/dashboard/StatsPanel';
 import { AlgorithmPanel } from '@/components/dashboard/AlgorithmPanel';
 import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/components/ui/tabs';
+import { WelcomeModal } from '@/components/ui/WelcomeModal';
 import {
   BarChart3,
   Cpu,
@@ -38,6 +39,8 @@ function Dashboard() {
       <div className="absolute inset-0">
         <CityScene />
       </div>
+
+      <WelcomeModal />
 
       {/* Floating Header / Info */}
       <div className="absolute top-4 left-1/2 -translate-x-1/2 pointer-events-none z-50 flex flex-col items-center gap-2">
