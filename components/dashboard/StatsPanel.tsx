@@ -25,7 +25,7 @@ function StatRow({
 }: {
   label: string;
   value: string;
-  icon?: React.ElementType;
+  icon?: React.ComponentType<{ className?: string }>;
   color?: string;
 }) {
   return (
