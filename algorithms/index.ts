@@ -8,6 +8,8 @@
 import type { AlgorithmComparison, BatteryConfig, RouteResult, WeightedGraph } from '@/types';
 import { findOptimalRouteDP } from './dp-bitmask';
 import { findRouteGreedy } from './greedy';
+import { findRoute2Opt } from './2-opt';
+import { findRouteRandom } from './random-search';
 
 export { findOptimalRouteDP } from './dp-bitmask';
 export { findRouteGreedy } from './greedy';
