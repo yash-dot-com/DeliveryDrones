@@ -35,6 +35,7 @@ export function findRouteRandom(
 
   if (n === 0) {
     return {
+      algorithm: 'random',
       route: [],
       deliveryOrder: [],
       totalDistance: 0,

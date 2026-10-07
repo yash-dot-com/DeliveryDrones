@@ -84,7 +84,7 @@ export interface BatteryStatus {
 
 // ---- Algorithm ----
 
-export type AlgorithmType = 'dp' | 'greedy';
+export type AlgorithmType = 'dp' | 'greedy' | 'twoOpt' | 'random';
 
 export interface RouteResult {
   algorithm: AlgorithmType;

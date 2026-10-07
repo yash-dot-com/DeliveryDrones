@@ -25,7 +25,9 @@ export function runComparison(
 ): AlgorithmComparison {
   const dp = findOptimalRouteDP(graph, startNodeId, deliveryIds, battery);
   const greedy = findRouteGreedy(graph, startNodeId, deliveryIds, battery);
-  return { dp, greedy };
+  const twoOpt = findRoute2Opt(graph, deliveryIds, battery);
+  const random = findRouteRandom(graph, deliveryIds, battery);
+  return { dp, greedy, twoOpt, random };
 }
 
 /**

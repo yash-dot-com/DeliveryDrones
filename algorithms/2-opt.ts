@@ -44,6 +44,7 @@ export function findRoute2Opt(
 
   if (n === 0) {
     return {
+      algorithm: 'twoOpt',
       route: [],
       deliveryOrder: [],
       totalDistance: 0,
